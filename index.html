@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Timeline</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+</head>
+<body>
+  <!-- Fixed Top Navigation -->
+  <nav id="timeline-nav">
+    <ul>
+      <li><a href="#event1">1905</a></li>
+      <li><a href="#event2">1920</a></li>
+      <li><a href="#event3">1945</a></li>
+      <!-- Add more as needed -->
+    </ul>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    <!-- Event Section 1 -->
+    <section id="event1" class="event-section">
+      <h2>1905 - Title of Text or Event</h2>
+      <p>Here’s your manual analysis of the text/event.</p>
+      <!-- Embedded p5.js sketch -->
+      <div id="sketch-container-1"></div>
+    </section>
+
+    <!-- Event Section 2 -->
+    <section id="event2" class="event-section">
+      <h2>1920 - Title of Text or Event</h2>
+      <p>Another chunk of analysis or commentary here.</p>
+      <div id="sketch-container-2"></div>
+    </section>
+
+    <!-- Event Section 3 -->
+    <section id="event3" class="event-section">
+      <h2>1945 - Title of Text or Event</h2>
+      <p>Another analysis segment with interactive component.</p>
+      <div id="sketch-container-3"></div>
+    </section>
+
+    <!-- Add a final summary/reflection section if needed -->
+  </main>
+
+  <!-- Scripts -->
+  <script src="scripts/sketch1.js"></script>
+  <script src="scripts/sketch2.js"></script>
+  <script src="scripts/sketch3.js"></script>
+</body>
+</html>
