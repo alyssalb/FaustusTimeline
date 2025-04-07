@@ -6,6 +6,83 @@
   <title>Interactive Timeline</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <style>
+    /* Base Styling */
+    :root {
+      --bg: #0d0d0d;
+      --text-primary: #e0b0ff; /* Lavender/Magical */
+      --text-secondary: #ff5555; /* Infernal red */
+      --accent: #00f0ff; /* Ghostly blue */
+      --highlight: #ff00ff; /* Occult magenta */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Fixed Top Navigation */
+    #timeline-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(13, 13, 13, 0.95);
+      border-bottom: 1px solid var(--accent);
+      z-index: 1000;
+    }
+
+    #timeline-nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0.5em;
+    }
+
+    #timeline-nav ul li {
+      margin: 0 1em;
+    }
+
+    #timeline-nav ul li a {
+      text-decoration: none;
+      color: var(--highlight);
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    #timeline-nav ul li a:hover {
+      color: var(--text-secondary);
+    }
+
+    /* Section Styling */
+    main {
+      padding-top: 4em;
+    }
+
+    .event-section {
+      padding: 4em 2em;
+      border-bottom: 1px dashed var(--accent);
+    }
+
+    .event-section h2 {
+      color: var(--text-secondary);
+    }
+
+    .event-section p {
+      line-height: 1.6;
+    }
+
+    #sketch-container-1,
+    #sketch-container-2,
+    #sketch-container-3 {
+      margin-top: 1em;
+      width: 100%;
+      min-height: 300px;
+    }
+  </style>
 </head>
 <body>
   <!-- Fixed Top Navigation -->
@@ -14,7 +91,6 @@
       <li><a href="#event1">1905</a></li>
       <li><a href="#event2">1920</a></li>
       <li><a href="#event3">1945</a></li>
-      <!-- Add more as needed -->
     </ul>
   </nav>
 
@@ -24,7 +100,6 @@
     <section id="event1" class="event-section">
       <h2>1905 - Title of Text or Event</h2>
       <p>Here’s your manual analysis of the text/event.</p>
-      <!-- Embedded p5.js sketch -->
       <div id="sketch-container-1"></div>
     </section>
 
@@ -41,8 +116,6 @@
       <p>Another analysis segment with interactive component.</p>
       <div id="sketch-container-3"></div>
     </section>
-
-    <!-- Add a final summary/reflection section if needed -->
   </main>
 
   <!-- Scripts -->
