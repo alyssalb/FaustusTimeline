@@ -77,7 +77,7 @@ p {
 .fullscreen-section {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 70px); /* adjust based on your navbar */
+  height: calc(100vh - 70px);
   overflow: hidden;
   padding: 0;
 }
@@ -95,18 +95,15 @@ p {
   border: none;
 }
 
-
 section {
   min-width: 100vw;
   height: calc(100vh - 70px);
-  padding: 0;
-  margin: 0;
+  padding: 20px;
   scroll-snap-align: start;
   background: linear-gradient(120deg, #1c1c1c, #2b2b2b);
   border-right: 2px solid #333;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 iframe {
