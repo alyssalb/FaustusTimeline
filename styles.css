@@ -88,8 +88,6 @@ p {
   flex-shrink: 0;
 }
 
-
-
 section {
   min-width: 100vw;
   height: calc(100vh - 70px);
@@ -103,3 +101,10 @@ section {
   flex-direction: column;
 }
 
+iframe {
+  width: 100%;
+  height: 80%;
+  border: 2px solid #a8ff60;
+  border-radius: 6px;
+  background: #1a1a1a;
+}
