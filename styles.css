@@ -31,7 +31,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
-  text-indent: 1.5em;
+  text-indent: 0.7em;
 }
 
 section ul {
@@ -42,7 +42,7 @@ section ul {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
-  padding-left: 3em; /* Matches paragraph indent */
+  padding-left: 1.5em; /* Reduced indent */
   list-style-position: outside;
 }
 
