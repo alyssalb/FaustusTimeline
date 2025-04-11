@@ -42,7 +42,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
-  padding-left: 3em; /* Indents whole list like paragraphs with text-indent */
+  padding-left: 3em; 
   list-style-position: outside;
 }
 
