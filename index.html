@@ -244,5 +244,25 @@
       <p>Wessman, C. (1998). Christopher Marlowe as ‘overpeerer’: Espionage, vision, and the Actaeon myth (Doctoral dissertation, The City University of New York).</p></p>
     </section>
   </main>
+  
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+    <script>
+      const scrollBtn = document.getElementById("scrollToTopBtn");
+
+      window.onscroll = function () {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          scrollBtn.classList.add("show");
+        } else {
+          scrollBtn.classList.remove("show");
+        }
+      };
+
+      scrollBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+</script>
 </body>
 </html>
