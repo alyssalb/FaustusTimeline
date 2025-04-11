@@ -76,8 +76,7 @@ section {
   border-right: 2px solid #333;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  overflow-y: auto;
 }
 
 iframe {
