@@ -34,6 +34,20 @@ p {
   text-indent: 1.5em;
 }
 
+ul {
+  font-size: clamp(1.1rem, 1.5vw, 1.3em);
+  line-height: 1.75em;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px 1em 40px; /* Keeps bullet indent nice */
+  text-align: justify;
+}
+
+li {
+  margin-bottom: 0.5em;
+  text-indent: 0; /* Keeps bullets aligned */
+}
 
 #timeline-nav {
   position: fixed;
