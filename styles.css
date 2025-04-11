@@ -74,25 +74,27 @@ p {
   margin-bottom: 20px;
 }
 
-#viz2010 {
-  height: calc(100vh - 130px); /* 70px nav + 60px heading estimate */
-  border: none;
-  border-radius: 0;
+#section5 {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px); /* Account for nav bar */
+  overflow: hidden;
+  padding: 0;
 }
 
-.fullscreen-viz {
+#section5 h2 {
+  padding: 20px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+#viz2010 {
   flex-grow: 1;
   width: 100%;
   height: 100%;
   border: none;
-  background: #1a1a1a;
-  display: block;
 }
 
-.viz-title {
-  padding: 20px;
-  flex-shrink: 0;
-}
 
 section {
   min-width: 100vw;
