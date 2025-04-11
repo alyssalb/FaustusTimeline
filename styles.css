@@ -14,6 +14,13 @@ h2 {
   margin-bottom: 0.5em;
 }
 
+h3 {
+  font-size: 1.5em;
+  color: #ff85c1; /* whimsical readable pink */
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.6em;
