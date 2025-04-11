@@ -3,124 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Timeline</title>
+  <title>Doctor Faustus Timeline</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
-  <style>
-    /* Base Styling */
-    :root {
-      --bg: #0d0d0d;
-      --text-primary: #e0b0ff; /* Lavender/Magical */
-      --text-secondary: #ff5555; /* Infernal red */
-      --accent: #00f0ff; /* Ghostly blue */
-      --highlight: #ff00ff; /* Occult magenta */
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg);
-      color: var(--text-primary);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    /* Fixed Top Navigation */
-    #timeline-nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: rgba(13, 13, 13, 0.95);
-      border-bottom: 1px solid var(--accent);
-      z-index: 1000;
-    }
-
-    #timeline-nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      margin: 0;
-      padding: 0.5em;
-    }
-
-    #timeline-nav ul li {
-      margin: 0 1em;
-    }
-
-    #timeline-nav ul li a {
-      text-decoration: none;
-      color: var(--highlight);
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-
-    #timeline-nav ul li a:hover {
-      color: var(--text-secondary);
-    }
-
-    /* Section Styling */
-    main {
-      padding-top: 4em;
-    }
-
-    .event-section {
-      padding: 4em 2em;
-      border-bottom: 1px dashed var(--accent);
-    }
-
-    .event-section h2 {
-      color: var(--text-secondary);
-    }
-
-    .event-section p {
-      line-height: 1.6;
-    }
-
-    #sketch-container-1,
-    #sketch-container-2,
-    #sketch-container-3 {
-      margin-top: 1em;
-      width: 100%;
-      min-height: 300px;
-    }
-  </style>
 </head>
 <body>
-  <!-- Fixed Top Navigation -->
   <nav id="timeline-nav">
     <ul>
-      <li><a href="#event1">1905</a></li>
-      <li><a href="#event2">1920</a></li>
-      <li><a href="#event3">1945</a></li>
+      <li><a href="#section1">Intro</a></li>
+      <li><a href="#section2">Context</a></li>
+      <li><a href="#section3">Analysis</a></li>
+      <li><a href="#section4">2010 Prod</a></li>
+      <li><a href="#section5">2010 Vis</a></li>
+      <li><a href="#section6">2013 Prod</a></li>
+      <li><a href="#section7">2013 Vis</a></li>
+      <li><a href="#section8">2016 Prod</a></li>
+      <li><a href="#section9">2016 Vis</a></li>
+      <li><a href="#section10">2018 Prod</a></li>
+      <li><a href="#section11">2018 Vis</a></li>
+      <li><a href="#section12">2021 Prod</a></li>
+      <li><a href="#section13">2021 Vis</a></li>
+      <li><a href="#section14">Conclusion</a></li>
+      <li><a href="#section15">Bibliography</a></li>
     </ul>
   </nav>
 
-  <!-- Main Content Wrapper -->
-  <main>
-    <!-- Event Section 1 -->
-    <section id="event1" class="event-section">
-      <h2>1905 - Title of Text or Event</h2>
-      <p>Here’s your manual analysis of the text/event.</p>
-      <div id="sketch-container-1"></div>
+  <main class="scroll-container">
+    <section id="section1"><h2>Introduction</h2><p>...</p></section>
+    <section id="section2"><h2>Contextualizing Statement</h2><p>...</p></section>
+    <section id="section3"><h2>Computational Analysis</h2>
+      <iframe src="visualizations/analysis.html"></iframe>
     </section>
-
-    <!-- Event Section 2 -->
-    <section id="event2" class="event-section">
-      <h2>1920 - Title of Text or Event</h2>
-      <p>Another chunk of analysis or commentary here.</p>
-      <div id="sketch-container-2"></div>
+    <section id="section4"><h2>2010 Production</h2><p>...</p></section>
+    <section id="section5"><h2>2010 Visualization</h2>
+      <iframe src="visualizations/2010.html"></iframe>
     </section>
-
-    <!-- Event Section 3 -->
-    <section id="event3" class="event-section">
-      <h2>1945 - Title of Text or Event</h2>
-      <p>Another analysis segment with interactive component.</p>
-      <div id="sketch-container-3"></div>
+    <section id="section6"><h2>2013 Production</h2><p>...</p></section>
+    <section id="section7"><h2>2013 Visualization</h2>
+      <iframe src="visualizations/2013.html"></iframe>
     </section>
+    <section id="section8"><h2>2016 Production</h2><p>...</p></section>
+    <section id="section9"><h2>2016 Visualization</h2>
+      <iframe src="visualizations/2016.html"></iframe>
+    </section>
+    <section id="section10"><h2>2018 Production</h2><p>...</p></section>
+    <section id="section11"><h2>2018 Visualization</h2>
+      <iframe src="visualizations/2018.html"></iframe>
+    </section>
+    <section id="section12"><h2>2021 Production</h2><p>...</p></section>
+    <section id="section13"><h2>2021 Visualization</h2>
+      <iframe src="visualizations/2021.html"></iframe>
+    </section>
+    <section id="section14"><h2>Concluding Thoughts</h2><p>...</p></section>
+    <section id="section15"><h2>Bibliography</h2><p>...</p></section>
   </main>
-
-  <!-- Scripts -->
-  <script src="scripts/sketch1.js"></script>
-  <script src="scripts/sketch2.js"></script>
-  <script src="scripts/sketch3.js"></script>
 </body>
 </html>
