@@ -158,29 +158,4 @@ iframe {
   background: #1a1a1a;
 }
 
-.nav-buttons {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
-  box-sizing: border-box;
-}
-
-.nav-buttons a {
-  background-color: #2d2d2d;
-  color: #a8ff60;
-  padding: 10px 16px;
-  border: 2px solid #a8ff60;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.nav-buttons a:hover {
-  background-color: #a8ff60;
-  color: #1a1a1a;
-}
 
