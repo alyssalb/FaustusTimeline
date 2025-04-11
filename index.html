@@ -304,5 +304,18 @@
       </div>
     </section>
   </main>
+  <script>
+  document.querySelectorAll('.nav-buttons a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      const targetEl = document.querySelector(targetId);
+
+      if (targetEl) {
+        e.preventDefault();
+        targetEl.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+      }
+    });
+  });
+</script>
 </body>
 </html>
