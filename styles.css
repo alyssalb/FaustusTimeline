@@ -95,7 +95,7 @@ img {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  overflow: hidden;
+  overflow-y: auto;
   padding: 0;
 }
 
@@ -108,7 +108,7 @@ img {
 .fullscreen-iframe {
   flex-grow: 1;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   border: none;
 }
 
@@ -125,7 +125,7 @@ section {
 
 iframe {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   border: 2px solid #a8ff60;
   border-radius: 6px;
   background: #1a1a1a;
