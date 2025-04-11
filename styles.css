@@ -55,24 +55,28 @@ section li {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  width: 100%;
   background-color: #222;
-  padding: 10px 0;
+  padding: 10px 20px;
   z-index: 999;
   border-bottom: 2px solid #a8ff60;
+  box-sizing: border-box;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 #timeline-nav ul {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0;
+  flex-wrap: nowrap;
+  gap: 20px;
   padding: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
 }
 
 #timeline-nav li {
-  margin: 0 10px;
+  flex-shrink: 0;
 }
 
 #timeline-nav a {
@@ -81,6 +85,8 @@ section li {
   font-weight: 600;
   position: relative;
   transition: color 0.3s;
+  padding: 6px 10px;
+  display: inline-block;
 }
 
 #timeline-nav a::after {
@@ -103,6 +109,7 @@ section li {
 #timeline-nav a:hover::after {
   opacity: 1;
 }
+
 
 .scroll-container {
   display: flex;
