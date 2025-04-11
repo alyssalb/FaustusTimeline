@@ -74,6 +74,12 @@ p {
   margin-bottom: 20px;
 }
 
+#viz2010 {
+  height: calc(100vh - 130px); /* 70px nav + 60px heading estimate */
+  border: none;
+  border-radius: 0;
+}
+
 .fullscreen-viz {
   flex-grow: 1;
   width: 100%;
