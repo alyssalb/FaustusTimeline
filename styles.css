@@ -34,7 +34,7 @@ p {
   text-indent: 1.5em;
 }
 
-ul {
+section ul {
   font-size: clamp(1.1rem, 1.5vw, 1.3em);
   line-height: 1.75em;
   text-align: justify;
@@ -42,11 +42,11 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
-  padding-left: 3em; 
+  padding-left: 3em; /* Matches paragraph indent */
   list-style-position: outside;
 }
 
-li {
+section li {
   margin-bottom: 0.6em;
   text-indent: 0;
 }
